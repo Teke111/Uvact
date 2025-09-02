@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============== TITLE =============== -->
+
+    <title>Custom Software Development</title>
+
+    <!-- ==============  Favicon =============== -->
+    <link rel="icon" href="images/uvact-logo.png">
+
+    <!-- ============= CSS LINK ============== -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- ============= CSS ICONS ============= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- =================FONT AWESOME=============== -->
+    <script src="https://kit.fontawesome.com/f9d22a9c33.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!--============== HEADER ================-->
+
+    <header class="header header-color" data-header>
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="./images/uvact-logo.png" width="158" height="24"
+                    alt="Développement d'applications mobiles et web" class="logo-light">
+                <img src="./images/uvact-logo-2.png" width="94" height="24"
+                    alt="Développement d'applications mobiles et web" class="logo-dark">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="index.html" class="logo">
+                        <img src="./images/uvact-logo-2.png" width="150" height="24"
+                            alt="Développement d'applications mobiles et web" class="logo-light-2">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li><a href="index.html" class="navbar-link">HOME</a></li>
+                    <li><a href="about-us.html" class="navbar-link">ABOUT US</a></li>
+                    <li><a href="portfolio.html" class="navbar-link">PORTFOLIO</a></li>
+                    <li><a href="services.html" class="navbar-link">SERVICES</a></li>
+                    <li>
+                        <div class="contact_me_link">
+                            <button data-modal-target="#modal">
+                                <!-- <ion-icon class="icon-mail" name="mail-outline"></ion-icon> -->
+                                <i class="fa-solid fa-envelope icon-mail"></i>
+                                <span>CONTACT US</span>
+                                <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+
+        </div>
+    </header>
+
+
+
+
+    <!--================= CONTACT POPUP ================-->
+
+    <div class="modal" id="modal">
+
+        <button data-close-button class="modal-close-button">&times;</button>
+
+        <div class="contact-card">
+
+            <div class="contact-card-rol">
+
+                <h2>Contact us</h2>
+                <span style="margin: 0px auto 40px; background-image: linear-gradient(to right, rgb(243, 218, 95), rgb(161, 140, 0)); 
+                width: 80px; height: 3px; display: block;"></span>
+
+                <p class="contact-card-rol-text">We will respond as soon as possible</p>
+
+                <p class="contact-card-col">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <font>
+                        <font>31858 Castaic Rd, #192,</font>
+                    </font>
+                    <br>
+                    <span>
+                        <font>
+                            <font>Castaic CA 91384</font>
+                        </font>
+                    </span>
+                </p>
+
+                <p class="contact-card-col">
+
+                    <i class="fa-solid fa-phone-flip"></i>
+
+                    <a href="#" class="tag">
+                        <font>
+                            <font>(925) 348 - 4467</font>
+                        </font>
+                    </a>
+                    </span>
+                </p>
+
+                <p class="contact-card-col">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@uvact.com"
+                        class="tag">info@uvact.com</a>
+                </p>
+
+                <hr style="opacity: 1; margin-top: 30px;">
+
+                <div class="form-contact-btn">
+                    <a href="estimate-idea.html" class="btn-contact">
+                        <span class="span-icon-3">
+                            <ion-icon class="icon-cal-3" name="calculator-outline"></ion-icon>
+                            Estimate my idea
+
+                        </span>
+                        <ion-icon class="icon-forward" name="chevron-forward-outline" style="color: white;"></ion-icon>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="overlayContact"></div>
+
+
+
+
+
+
+
+    <main>
+
+        <section class="service">
+
+
+            <!-- =========== NAVBAR ============ -->
+
+            <div class="services-menu">
+
+                <nav>
+
+                    <a href="#top" class="service-nav-btn-left">We build</a>
+
+                    <a href="#middle" class="service-nav-btn-right">We support</a>
+
+                </nav>
+
+
+            </div>
+
+
+            <!-- =========== BACKGROUND IMAGE ============ -->
+
+            <div id="top" class="service-background">
+
+                <img src="./images/background-3.png" alt="background-image" class="service-background-img">
+
+            </div>
+
+
+            <!-- =========== CONTENT ============ -->
+
+            <div class="service-content">
+
+                <div class="service-content-1">
+
+                    <div class="service-left">
+                        <h2 class="service-left-title">
+                            <span style="margin-right:20px;background-image:linear-gradient(to bottom, #F3DA5F, #A18C00);
+                                width:3px;display:inline-block"></span>
+
+                            <span class="service-left-text">
+                                <span>Properly Engineered products</span>
+                                Built to perform.
+                                <!-- <br>
+                                our passion -->
+                            </span>
+                        </h2>
+
+                        <h2 class="service-left-title">
+                            <span style="margin-right:20px;background-image:linear-gradient(to bottom, #F3DA5F, #A18C00);
+                                width:3px;display:inline-block"></span>
+
+                            <span class="service-left-text">
+                                24/7 Website Support Services
+                                <!-- <br>
+                                our passion -->
+                            </span>
+                        </h2>
+
+                    </div>
+
+                    <div class="service-right">
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-1.svg" alt="card-image"> -->
+                            <i class="fa-solid fa-mobile"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>01</span>
+                                </strong>
+
+                                <h3>Mobile Applications <br>Development</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">Uvact's expert engineers build iOS, Android, and
+                                            Hybrid mobile applications that can stand alone or be integrated with web
+                                            applications. We ensure your application passes rigorous acceptance
+                                            standards with flying colors and gets published quickly.</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-2.svg" alt="card-image"> -->
+                            <i class="fa-solid fa-cart-shopping"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>02</span>
+                                </strong>
+
+                                <h3>Ecommerce Applications <br>Development</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">If your business sells products or services online,
+                                            a custom ecommerce application is an essential competitive advantage. Uvact
+                                            builds applications that streamline payment, inventory, reporting, and
+                                            security to keep your business thriving. </p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul>
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-1.svg" alt="card-image"> -->
+                            <i class="fa-brands fa-wordpress"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>03</span>
+                                </strong>
+
+                                <h3>Custom WordPress <br>Development Services</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">Uvact's custom WordPress development services
+                                            leverage the strength of the content management system to the benefit of
+                                            clients. Our developers work with our clients to bring their wildest dreams
+                                            to life.</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul>
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-4.svg" alt="card-image"> -->
+                            <i class="fa-solid fa-warehouse"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>04</span>
+                                </strong>
+
+                                <h3>Enterprise Applications <br>Development</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">Our elite team of software engineers creates
+                                            dynamic, innovative ERP applications. We build solutions that optimize
+                                            critical business processes and functions including inventory and
+                                            construction management, accounting, HR, and more.</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul>
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-4.svg" alt="card-image"> -->
+                            <i class="fa-solid fa-box-open"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>05</span>
+                                </strong>
+
+                                <h3>Product Development</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">From idea to prototype to release, Uvact can help
+                                            your company through the entire life cycle of new product development.</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul>
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+
+
+                        <div class="service-card">
+                            <!-- <img src="./images/service-4.svg" alt="card-image"> -->
+                            <i class="fa-solid fa-people-group"></i>
+
+                            <div class="service-card-details">
+                                <strong>
+                                    <span>06</span>
+                                </strong>
+
+                                <h3>Team Support</h3>
+
+                                <ul class="service-list">
+                                    <li>
+                                        <p class="service-card-text">Expert Agile teams to augment your local teams.
+                                        </p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- <ul>
+                                    <li>
+                                        <p class="service-card-text">Nous analyserons votre idées et vos besoins.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous vous ferons une estimation réaliste et
+                                            ajustée.</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Nous déterminerons le périmètre fonctionnel et
+                                            écrirons les spécifications.
+                                        </p>
+                                    </li>
+                                </ul> -->
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div id="middle" class="service-content-2">
+
+                    <div class="services-left">
+                        <h2 class="service-left-title">
+                            <span style="margin-right:20px;background-image:linear-gradient(to bottom, #F3DA5F, #A18C00);
+                        width:3px;display:inline-block"></span>
+
+                            <span class="service-left-text-2">
+                                <span>ON DEMAND</span>
+                                Software Engineering Teams
+                                on your time zone.
+                            </span>
+                        </h2>
+
+                        <!-- <div class="service-card-2 card-shadow">
+
+                            <div class="service-card-details">
+                                <h3>Reinforcement in your team</h3>
+
+                                <ul>
+                                    <li>
+                                        <p class="service-card-text">Cutting-edge expertise</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Quick availability</p>
+                                    </li>
+
+                                    <li>
+                                        <p class="service-card-text">Package support
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div> -->
+                    </div>
+
+
+                    <div class="service-right">
+                        <div class="service-right-rol">
+
+                            <div class="service-right-col">
+                                <img src="./images/javascript.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/php.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/linux.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/kubernetes.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/react-2.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/python-2.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/java.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/wordpress-2.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/ios.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/android-2.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/aws.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/django.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/c.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/azure.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+
+                            <div class="service-right-col">
+                                <img src="./images/wordpress-2.png" alt="resource" class="service-image">
+                                <!-- <i class="fa-brands fa-react"></i> -->
+
+                                <!-- <div class="service-right-col-text">
+                                    <h3>React-native</h3>
+                                    <p>The most popular hybrid mobile framework on the market, fast and modular.</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================== FOOTER ======================= -->
+
+
+    <section class="footer">
+        <!-- <div class="container"> -->
+        <div class="footer-div">
+
+
+
+
+            <!-- FOOTER FORM -->
+
+            <div class="footer-form" style="z-index: 1;">
+
+                <div class="form-logo">
+                    <a href="#" class="form-link">
+                        <img src="./images/uvact-logo-2.png" alt="">
+                    </a>
+                </div>
+
+                <div class="form-contents">
+                    <h3>Contact</h3>
+                    <p class="form-contents-text">We will respond within 24 hours</p>
+
+                    <p class="form-text">
+                        <!-- <ion-icon name="map-outline"></ion-icon> -->
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <font>
+                            <font>31858 Castaic Rd, #192,</font>
+                        </font>
+                        <br>
+                        <span>
+                            <font>
+                                <font>Castaic CA
+                                    91384&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </font>
+                            </font>
+                        </span>
+                    </p>
+
+                    <p class="form-text">
+                        <!-- <ion-icon name="call-outline"></ion-icon> -->
+
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <!-- <font> -->
+                        <a href="#" class="tag">
+                            <font>
+                                <font>(925) 348-4467&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </font>
+                            </font>
+                        </a>
+                        </span>
+                        <!-- </font> -->
+                    </p>
+
+                    <!-- <p class="form-text">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                        <a href="#">+1 (925) 348 - 4467</a>
+                    </p> -->
+
+                    <p class="form-text">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@uvact.com"
+                            class="tag">info@uvact.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </p>
+
+                    <hr style="opacity:0.15; margin:30px 0 19px 0">
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-btn">
+                        <a href="estimate-idea.html" class="btn-4">
+                            <span class="span-icon">
+                                <!-- <ion-icon class="icon-cal" name="calculator-outline"></ion-icon> -->
+                                <i class="fa-solid fa-calculator icon-cal"></i>
+                                Estimate my idea
+
+                            </span>
+                            <!-- <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon> -->
+                            <i class="fa-solid fa-angle-right icon-forward"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="hey" style="z-index: 0;">
+            <img src="images/mobile-1.png" alt="">
+        </div> -->
+
+        <div class="home-image-rol-2" style="z-index: 0;">
+            <div class="home_image-2">
+                <img src="./images/mobile-2.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="home_image-2 advance-2" style="z-index: 1;">
+                <img src="./images/mobile-1.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="home_image-2 advance-3">
+                <img src="./images/mobile-3.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="relative"></div>
+        </div>
+
+        <!-- </div> -->
+    </section>
+
+
+    <!-- ==================== FOOTER FOR MOBILE =========================== -->
+
+    <div class="footer-mobile">
+        <div class="footer-mobile-button">
+            <button data-modal-target="#modal" class="button-primary">
+                <span class="span-icon-2">
+                    <!-- <ion-icon class="icon-mail" name="mail-outline"></ion-icon> -->
+                    <i class="fa-solid fa-envelope icon-mail"></i>
+                    CONTACT US
+                </span>
+                <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon>
+
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ========================ICON LINK========================== -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- ================ FONT AWESOME LINK =============== -->
+    <script src="https://kit.fontawesome.com/f9d22a9c33.js" crossorigin="anonymous"></script>
+
+
+    <!-- ===================JAVASCRIPT LINK======================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/question.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- =============== TITLE =============== -->
+
+    <title>Custom Software Development</title>
+
+    <!-- ==============  Favicon =============== -->
+    <link rel="icon" href="images/uvact-logo.png">
+
+    <!-- ============= CSS LINK ============== -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!--============== HEADER ================-->
+
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="index.html" class="logo">
+                <img src="./images/uvact-logo.png" width="158" height="24"
+                    alt="Développement d'applications mobiles et web" class="logo-light">
+                <img src="./images/uvact-logo-2.png" width="94" height="24"
+                    alt="Développement d'applications mobiles et web" class="logo-dark">
+            </a>
+
+            <nav class="navbar" data-navbar>
+
+                <div class="navbar-top">
+                    <a href="index.html" class="logo">
+                        <img src="./images/uvact-logo-2.png" width="150" height="24"
+                            alt="Développement d'applications mobiles et web" class="logo-light-2">
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+                        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+                    </button>
+                </div>
+
+                <ul class="navbar-list">
+                    <li><a href="index.html" class="navbar-link">HOME</a></li>
+                    <li><a href="about-us.html" class="navbar-link">ABOUT US</a></li>
+                    <li><a href="portfolio.html" class="navbar-link">PORTFOLIO</a></li>
+                    <li><a href="services.html" class="navbar-link">SERVICES</a></li>
+                    <li>
+                        <div class="contact_me_link">
+                            <button data-modal-target="#modal">
+                                <!-- <ion-icon class="icon-mail" name="mail-outline"></ion-icon> -->
+                                <i class="fa-solid fa-envelope icon-mail"></i>
+                                <span>CONTACT US</span>
+                                <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </nav>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+            </button>
+
+            <div class="overlay" data-nav-toggler data-overlay></div>
+
+
+        </div>
+    </header>
+
+
+
+
+    <!--================= CONTACT POPUP ================-->
+
+    <div class="modal" id="modal">
+
+        <button data-close-button class="modal-close-button">&times;</button>
+
+        <div class="contact-card">
+
+            <div class="contact-card-rol">
+
+                <h2>Contact us</h2>
+                <span style="margin: 0px auto 40px; background-image: linear-gradient(to right, rgb(243, 218, 95), rgb(161, 140, 0)); 
+                width: 80px; height: 3px; display: block;"></span>
+
+                <p class="contact-card-rol-text">We will respond as soon as possible</p>
+
+                <p class="contact-card-col">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <font>
+                        <font>31858 Castaic Rd, #192,</font>
+                    </font>
+                    <br>
+                    <span>
+                        <font>
+                            <font>Castaic CA 91384</font>
+                        </font>
+                    </span>
+                </p>
+
+                <p class="contact-card-col">
+
+                    <i class="fa-solid fa-phone-flip"></i>
+
+                    <a href="#" class="tag">
+                        <font>
+                            <font>(925) 348 - 4467</font>
+                        </font>
+                    </a>
+                    </span>
+                </p>
+
+                <p class="contact-card-col">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@uvact.com"
+                        class="tag">info@uvact.com</a>
+                </p>
+
+                <hr style="opacity: 1; margin-top: 30px;">
+
+                <div class="form-contact-btn">
+                    <a href="estimate-idea.html" class="btn-contact">
+                        <span class="span-icon-3">
+                            <ion-icon class="icon-cal-3" name="calculator-outline"></ion-icon>
+                            Estimate my idea
+
+                        </span>
+                        <ion-icon class="icon-forward" name="chevron-forward-outline" style="color: white;"></ion-icon>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="overlayContact"></div>
+
+
+
+
+
+
+    <main>
+
+        <!-- ============== Background-image =============== -->
+
+        <section class="estimate-background">
+
+            <div class=" home-image-rol" style="z-index: 0;">
+                <div class="home_image">
+                    <img src="./images/mobile-3.png" alt="" class="home_img">
+                </div>
+
+                <div class="home_image advance" style="z-index: 1;">
+                    <img src="./images/mobile-1.png" alt="" class="home_img">
+                </div>
+
+                <div class="home_image advance-1" style="display: none;">
+                    <img src="./images/mobile-2.png" alt="" class="home_img">
+                </div>
+
+                <div class="relative"></div>
+            </div>
+
+        </section>
+
+
+        <!-- ======== Estimate content ========= -->
+
+        <div class="estimate-content" style="z-index: 3;">
+            <div class="estimate-card">
+
+                <div class="estimate-details" id="quiz">
+                    <h2>What would my idea cost ?</h2>
+                    <span style="margin: 0px auto 40px; background-image: linear-gradient(to right, rgb(243, 218, 95), rgb(161, 140, 0)); width: 80px; 
+                        height: 3px; display: block;"></span>
+
+                    <!-- form start -->
+                    <form onsubmit="submitForm(); return false">
+                        <div class="wizard-box">
+                            <div class="survey" id="one">
+                                <div class="wizard-step-box">
+                                    <p class="survey-text">
+                                        <font>Question</font>
+                                        <font>1</font>
+                                        <font>of</font>
+                                        <font>5</font>
+                                    </p>
+
+                                    <div class="wizard-step-box-detail">
+                                        On which platforms do you want to develop your idea ?
+                                    </div>
+
+                                    <div class="checkbox-cards">
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="a" name="mobile" value="mobile"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="a">Mobile iOS/Android (Native App)</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="b" name="website" value="website"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="b">Website (Mobile and PC)</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="c" name="both" value="both"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="c">Both</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="survey" id="two">
+                                <div class="wizard-step-box">
+                                    <p class="survey-text">
+                                        <font>Question</font>
+                                        <font>2</font>
+                                        <font>of</font>
+                                        <font>5</font>
+                                        <small>
+                                            <font>
+                                                <font>
+                                                    - Multiple choices possible
+                                                </font>
+                                            </font>
+                                        </small>
+                                    </p>
+
+                                    <div class="wizard-step-box-detail" id="question">
+                                        Do you need a registration system for your app ?
+                                    </div>
+
+                                    <div class="checkbox-cards">
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="d" value="Yes, by email/password"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="d">Yes, by email/password</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="e" value="Yes, by facebook/twitter"
+                                                    onclick="enable()">
+                                            </div>
+
+                                            <div class="checkbox-card-content">
+                                                <label for="e">Yes, by Facebook / Twitter</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="f" value="Yes, by google" onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="f">Yes, by Google</label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="g" value="Yes, by sms" onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="g">Yes, through an SMS</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="h" value="Yes, by sms" onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="h">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="survey" id="three">
+                                <div class="wizard-step-box">
+                                    <p class="survey-text">
+                                        <font>Question</font>
+                                        <font>3</font>
+                                        <font>of</font>
+                                        <font>5</font>
+                                        <small>
+                                            <font>
+                                                <font>
+                                                    - Multiple choices possible
+                                                </font>
+                                            </font>
+                                        </small>
+                                    </p>
+
+                                    <div class="wizard-step-box-detail" id="question">
+                                        Do you need a geolocation system in your application?
+                                    </div>
+
+                                    <div class="checkbox-cards">
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="i" value="user-geolocation"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="i">User Geolocation</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="j" value="geolocation of static points"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="j">Geolocation of static points other than the user
+                                                    on a map</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="k" value="geolocation of moving points"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="k">Geolocation of moving points other than the user
+                                                    on a map</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="l" value="geolocation of moving points"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="l">No</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="survey" id="four">
+                                <div class="wizard-step-box">
+                                    <p class="survey-text">
+                                        <font>Question</font>
+                                        <font>4</font>
+                                        <font>of</font>
+                                        <font>5</font>
+                                    </p>
+
+                                    <div class="wizard-step-box-detail" id="question">
+                                        Will your application have to contain a chat system?
+                                    </div>
+
+                                    <div class="checkbox-cards">
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="m" value="no" onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="m">No</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="n" value="text exchange only"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="n">Text exchange only</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="o" value="exchange of texts"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="o">Exchange of texts, photos and videos</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="p" value="discussion group management"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="p">Discussion group management</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="survey" id="five">
+                                <div class="wizard-step-box">
+                                    <p class="survey-text">
+                                        <font>Question</font>
+                                        <font>5</font>
+                                        <font>of</font>
+                                        <font>5</font>
+                                        <small>
+                                            <font>
+                                                <font>
+                                                    - Multiple choices possible
+                                                </font>
+                                            </font>
+                                        </small>
+                                    </p>
+
+                                    <div class="wizard-step-box-detail" id="question">
+                                        Will your application have to manage notifications?
+                                    </div>
+
+                                    <div class="checkbox-cards">
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="q" value="push notifications"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="q">Push notifications</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="r" value="email notifications"
+                                                    onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="r">Email notifications</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkbox-card">
+                                            <div class="pseudo-checkbox">
+                                                <input type="checkbox" id="s" value="text messages" onclick="enable()">
+                                            </div>
+                                            <div class="checkbox-card-content">
+                                                <label for="s">Text messages</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="survey" id="six">
+                                <div class="wizard-step-box">
+
+                                    <div class="wizard-step-box-detail" id="question">
+                                        To contact you
+                                    </div>
+
+                                    <div style="margin-top: 30px;">
+
+                                        <div class="field">
+
+                                            <label for="t" class="label">
+                                                <font>
+                                                    <font>Full name</font>
+                                                </font>
+                                            </label>
+
+                                            <div class="control">
+                                                <input type="text" id="t" class="control-input"
+                                                    onkeyup="validateName()">
+                                            </div>
+                                            <span id="name-error"></span>
+
+                                        </div>
+
+                                        <div class="field">
+
+                                            <label for="u" class="label">
+                                                <font>
+                                                    <font>Your email</font>
+                                                </font>
+                                            </label>
+
+                                            <div class="control">
+                                                <input type="email" id="u" class="control-input"
+                                                    onkeyup="validateEmail()">
+                                            </div>
+                                            <span id="email-error"></span>
+
+                                        </div>
+
+
+                                        <div class="field">
+
+                                            <label for="v" class="label">
+                                                <font>
+                                                    <font>Phone number</font>
+                                                </font>
+                                            </label>
+
+                                            <div class="control">
+                                                <input type="text" id="v" class="control-input"
+                                                    onkeyup="validatePhone()">
+                                            </div>
+                                            <span id="phone-error"></span>
+
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <div class="estimate-footer">
+                                <div class="estimate-btn-1">
+                                    <button id="previous-button" class="question-btn-1"> <span> <ion-icon
+                                                name="chevron-back-outline" class="forward"></ion-icon>
+                                            <font>
+                                                <font>Previous</font>
+                                            </font>
+                                        </span></button>
+                                </div>
+
+                                <div class="estimate-btn-2">
+                                    <button id="next-button" class="question-btn-2" disabled="true"> <span>
+                                            <font>
+                                                <font>Next</font>
+                                            </font>
+                                            <ion-icon name="chevron-forward-outline" class="forward"></ion-icon>
+                                        </span></button>
+                                </div>
+
+                                <!-- <input type="submit" value="submit" onclick="return validateForm()" /> -->
+                                <!-- <span id="submit-error"></span> -->
+                                <div class="estmimate-btn-2">
+                                    <span id="submit-button" class="question-btn-2"> <span>
+                                            <!-- <font>
+                                            <font>To validate</font>
+                                        </font> -->
+                                            <input type="submit" value="Send" onclick="console.log('heekd')" />
+                                            <!-- <button onclick="console.log('heehe')">Send</button> -->
+                                            <ion-icon name="chevron-forward-outline" class="forward"></ion-icon>
+                                        </span>
+                                    </span>
+
+                                </div>
+                                <span id="submit-error"></span>
+                            </div>
+
+
+
+                        </div>
+
+
+                    </form>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- </div> -->
+
+
+    </main>
+
+
+
+
+
+
+
+    <!-- ================== FOOTER ======================= -->
+
+
+    <section class="footer">
+        <!-- <div class="container"> -->
+        <div class="footer-div">
+
+
+
+
+            <!-- FOOTER FORM -->
+
+            <div class="footer-form" style="z-index: 1;">
+
+                <div class="form-logo">
+                    <a href="#" class="form-link">
+                        <img src="./images/uvact-logo-2.png" alt="">
+                    </a>
+                </div>
+
+                <div class="form-contents">
+                    <h3>Contact</h3>
+                    <p class="form-contents-text">We will respond within 24 hours</p>
+
+                    <p class="form-text">
+                        <!-- <ion-icon name="map-outline"></ion-icon> -->
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <font>
+                            <font>31858 Castaic Rd, #192,</font>
+                        </font>
+                        <br>
+                        <span>
+                            <font>
+                                <font>Castaic CA
+                                    91384&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </font>
+                            </font>
+                        </span>
+                    </p>
+
+                    <p class="form-text">
+                        <!-- <ion-icon name="call-outline"></ion-icon> -->
+
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <!-- <font> -->
+                        <a href="#" class="tag">
+                            <font>
+                                <font>(925) 348-4467&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                </font>
+                            </font>
+                        </a>
+                        </span>
+                        <!-- </font> -->
+                    </p>
+
+                    <!-- <p class="form-text">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                        <a href="#">+1 (925) 348 - 4467</a>
+                    </p> -->
+
+                    <p class="form-text">
+                        <i class="fa-solid fa-envelope"></i>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@uvact.com"
+                            class="tag">info@uvact.com&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    </p>
+
+                    <hr style="opacity:0.15; margin:30px 0 19px 0">
+
+
+                    <!-- BUTTONS -->
+
+                    <div class="form-btn">
+                        <a href="estimate-idea.html" class="btn-4">
+                            <span class="span-icon">
+                                <!-- <ion-icon class="icon-cal" name="calculator-outline"></ion-icon> -->
+                                <i class="fa-solid fa-calculator icon-cal"></i>
+                                Estimate my idea
+
+                            </span>
+                            <!-- <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon> -->
+                            <i class="fa-solid fa-angle-right icon-forward"></i>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="hey" style="z-index: 0;">
+            <img src="images/mobile-1.png" alt="">
+        </div> -->
+
+        <div class="home-image-rol-2" style="z-index: 0;">
+            <div class="home_image-2">
+                <img src="./images/mobile-2.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="home_image-2 advance-2" style="z-index: 1;">
+                <img src="./images/mobile-1.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="home_image-2 advance-3">
+                <img src="./images/mobile-3.png" alt="" class="home_img-2">
+            </div>
+
+            <div class="relative"></div>
+        </div>
+
+        <!-- </div> -->
+    </section>
+
+    <!-- ==================== FOOTER FOR MOBILE =========================== -->
+
+    <div class="footer-mobile">
+        <div class="footer-mobile-button">
+            <button data-modal-target="#modal" class="button-primary">
+                <span class="span-icon-2">
+                    <!-- <ion-icon class="icon-mail" name="mail-outline"></ion-icon> -->
+                    <i class="fa-solid fa-envelope icon-mail"></i>
+                    CONTACT US
+                </span>
+                <ion-icon class="icon-forward" name="chevron-forward-outline"></ion-icon>
+
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- ========================ICON LINK========================== -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <!-- ================ FONT AWESOME LINK =============== -->
+    <script src="https://kit.fontawesome.com/f9d22a9c33.js" crossorigin="anonymous"></script>
+
+    <!-- ===================JAVASCRIPT LINK======================= -->
+
+    <script src="js/app.js"></script>
+    <script src="js/question.js"></script>
+    <!-- <script src="js/formValidation.js"></script> -->
+
+    <script>
+        function enable() {
+            var a = document.getElementById("a")
+            var b = document.getElementById("b")
+            var c = document.getElementById("c")
+            var d = document.getElementById("d")
+            var e = document.getElementById("e")
+            var f = document.getElementById("f")
+            var g = document.getElementById("g")
+            var h = document.getElementById("h")
+            var i = document.getElementById("i")
+            var j = document.getElementById("j")
+            var k = document.getElementById("k")
+            var l = document.getElementById("l")
+            var m = document.getElementById("m")
+            var n = document.getElementById("n")
+            var o = document.getElementById("o")
+            var p = document.getElementById("p")
+            var q = document.getElementById("q")
+            var r = document.getElementById("r")
+            var s = document.getElementById("s")
+            var t = document.getElementById("t")
+            var u = document.getElementById("u")
+            var v = document.getElementById("v")
+            var disableBtn = document.getElementById("next-button");
+
+
+            if (a.checked) {
+                disableBtn.removeAttribute("disabled");
+
+            }
+
+            else if (b.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (c.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+
+            else if (d.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+
+            else if (e.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (f.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (g.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+
+            else if (h.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (i.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (j.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (k.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (l.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (m.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (n.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (o.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (p.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (q.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (r.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (s.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (t.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (u.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else if (v.checked) {
+                disableBtn.removeAttribute("disabled");
+            }
+
+            else {
+                disableBtn.disabled = "true"
+            }
+
+        }
+
+
+    </script>
+
+
+
+    <script>
+        let nameError = document.getElementById('name-error');
+        let phoneError = document.getElementById('phone-error');
+        let emailError = document.getElementById('email-error');
+        let submitError = document.getElementById('submit-error');
+        // let myButton = document.getElementById('myButton');
+
+        let validated = false;
+
+        function validateName() {
+            var name = document.getElementById('t').value;
+
+            if (name.length == 0) {
+                nameError.innerHTML = 'Your full name is required';
+                return false;
+            }
+
+            if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                nameError.innerHTML = 'Please write your full name';
+                return false;
+            }
+
+            nameError.innerHTML = '';
+            return true;
+        }
+
+        function validateEmail() {
+            var email = document.getElementById('u').value;
+
+            if (email.length == 0) {
+                emailError.innerHTML = 'Your email is required';
+                return false;
+            }
+
+            if (email.match(/^A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                emailError.innerHTML = 'Your email Invalid';
+                return false;
+            }
+
+            emailError.innerHTML = '';
+            return true;
+        }
+
+
+        function validatePhone() {
+            var phone = document.getElementById('v').value;
+
+            if (phone.length == 0) {
+                phoneError.innerHTML = 'Your phone number is required';
+                return false;
+            }
+
+            // if (phone.length !== 11) {
+            //     phoneError.innerHTML = 'Your phone number should be 11 digits';
+            //     return false;
+            // }
+
+            // if (!phone.match(/^[0-9]{11}$/)) {
+            //     phoneError.innerHTML = 'Only digits please.';
+            //     return false;
+            // }
+
+            phoneError.innerHTML = '';
+            return true;
+        }
+
+        function validateForm() {
+            if (!validateName() || !validateEmail() || !validatePhone()) {
+                submitError.style.display = 'block'
+                submitError.innerHTML = "Please fix error to submit";
+                setTimeout(function () {
+                    submitError.style.display = "none";
+                }, 3000);
+                validated = false;
+                return false;
+            }
+
+            // document.getElementById("myButton").onclick = function () {
+            //     location.href = "index.html";
+            // };
+
+            validated = true;
+
+            return true;
+
+
+        }
+
+        const submitForm = async () => {
+            // section 1
+            const a = document.getElementById('a');
+            const b = document.getElementById('b');
+            const c = document.getElementById('c');
+
+            // section 2
+            const d = document.getElementById('d');
+            const e = document.getElementById('e');
+            const f = document.getElementById('f');
+            const g = document.getElementById('g');
+
+            // section 3
+            const h = document.getElementById('h');
+            const i = document.getElementById('i');
+            const j = document.getElementById('j');
+
+            // section 4
+            const k = document.getElementById('k');
+            const l = document.getElementById('l');
+            const m = document.getElementById('m');
+            const n = document.getElementById('n');
+
+            // section 5
+            const o = document.getElementById('o');
+            const p = document.getElementById('p');
+            const q = document.getElementById('q');
+
+            // section 6
+            const r = document.getElementById('r');
+            const s = document.getElementById('s');
+            const t = document.getElementById('t');
+
+            const text = `
+                1. On which platforms do you want to develop: ${a.checked ? a.value : ""}, ${b.checked ? b.value : ""}, ${c.checked ? c.value : ""}.
+                2. Do you need a registration system for your app: ${d.checked && d.value}, ${e.checked && e.value}, ${f.checked && f.value}, ${g.checked && g.value}, ${h.checked && h.value}.
+                3. Do you need a geolocation system: ${i.checked && i.value}, ${j.checked && j.value}, ${k.checked && k.value}, ${l.checked && l.value}, .
+                4. Will your application have to contain a chat system: ${m.checked && m.value}, ${n.checked && n.value}, ${o.checked && o.value}, ${p.checked && p.value}, .
+                5. Will your application have to manage notifications: ${q.checked && q.value}, ${r.checked && r.value}, ${s.checked && s.value}.
+                6. To contact you: ${t.value}, ${u.value}, ${v.value}.
+            `;
+
+            validateForm() && console.log(text);
+
+            validateForm() && console.log(text);
+
+            validateForm() && await fetch('https://api.rockettexting.app/sendUvactEmail', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    from: u.value,
+                    subject: 'Estimate',
+                    platforms: `${a.checked ? a.value + ',' : ""} ${b.checked ? b.value + ',' : ""} ${c.checked ? c.value : ""}`,
+                    registration: `${d.checked ? d.value + ',' : ""} ${e.checked ? e.value + ',' : ""} ${f.checked ? f.value + ',' : ""} ${g.checked && g.value} ${h.checked ? h.value + ',' : ""}`,
+                    geolocation: `${i.checked ? i.value + ',' : ""} ${j.checked ? j.value + "," : ""} ${k.checked ? k.value + ',' : ""} ${l.checked ? l.value + "," : ""}`,
+                    chat: `${m.checked ? m.value + ',' : ""} ${n.checked ? n.value + ',' : ","} ${o.checked ? o.value + ',' : ""} ${p.checked ? p.value + "," : ""}`,
+                    notification: `${q.checked ? q.value + ',' : ""} ${r.checked ? r.value + ',' : ""} ${s.checked ? s.value + ',' : ""}`,
+                    contact: `${t.value}, ${u.value}, ${v.value}`
+                }),
+            })
+                .then((res) => {
+                    console.log('res', res);
+                    // location.href = "submitted-form.html";
+                })
+                .then((err) => console.log('err', err));
+
+            location.href = "submitted-form.html";
+
+        }
+    </script>
+</body>
+
+</html>
